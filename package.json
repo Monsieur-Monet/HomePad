@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Monsieur-Monet/HomePad/issues"
   },
-  "homepage": "https://github.com/Monsieur-Monet/HomePad#readme"
+  "homepage": "https://github.com/Monsieur-Monet/HomePad#readme",
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
 }
