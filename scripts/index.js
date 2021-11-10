@@ -1,10 +1,6 @@
-import { TestComponent } from './components/test.component.js';
-import { componentFactory } from './component-factory.js';
-import { awaitDOM } from './helpers/sleep.js';
+import TestComponent from './components/test.component.js';
+import { awaitDOM } from './helpers/sleep';
 
-awaitDOM().then(() => {
-  const instances = componentFactory([
-    TestComponent,
-  ]);
-})
-
+awaitDOM().then(_ => {
+  TestComponent();
+});
