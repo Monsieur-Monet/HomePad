@@ -596,6 +596,7 @@ video {
 :root {
   --favorites-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.75);
   --fs-headline: 1.5rem;
+  --grey-900: #222;
 }
 
 body {
@@ -652,6 +653,28 @@ body {
   -moz-box-shadow: var(--favorites-shadow);
 }
 
+.overlay {
+  background-color: var(--grey-900);
+  transition: opacity .2s ease-out, visibility .2s ease-out, z-index .2s ease-out .2s;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -9999;
+}
+
+.inset-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.z-100 {
+  z-index: 100;
+}
 /* /COMPONENTS */
 
 

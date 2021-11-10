@@ -9,3 +9,9 @@ export const awaitDOM = _ => {
     document.addEventListener('DOMContentLoaded', resolve);
   });
 };
+
+export const awaitLoad = elem => {
+  return new Promise(resolve => {
+    elem.addEventListener('load', resolve);
+  })
+}
