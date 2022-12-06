@@ -605,6 +605,11 @@ body {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(/fonts/SourceCodePro/SourceCodePro-Regular.ttf) format("truetype");
+}
+
 /* /BASE */
 
 /* COMPONENTS */
@@ -614,22 +619,16 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter: brightness(30%) blur(8px);
+  filter: brightness(80%) blur(8px);
   transform: scale(1.05); /*hiding halo from filter*/
 }
 
-.showerthought-container {
-  color: white;
+.container {
+  width: 100vw;
+  height: 100vh;
+
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
-  padding-left: 30vw;
-  padding-right: 30vw;
-}
-
-.showerthought-text {
-  font-size: var(--fs-headline);
-  text-align: center;
 }
 
 .favorites-container {
@@ -675,6 +674,41 @@ body {
 .z-100 {
   z-index: 100;
 }
+
+.searchbox {
+  margin-top: 40vh;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.searchbox:focus-visible {
+  outline: none;
+}
+
+
+.searchButton {
+  padding: 1rem;
+  background-color: #0FC2C0;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition: background-color .2s ease-in-out;
+}
+
+.search__button:hover {
+  background-color: #0CABA8;
+}
+
+.greetContainer {
+  position: absolute;
+  color: #fff;
+  left: 5rem;
+  top: 5rem;
+  font-family: "Source Code Pro", serif;
+  font-size: 5rem;
+  line-height: 100%;
+}
+
 /* /COMPONENTS */
 
 

@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HomePad</title>
   <link rel="stylesheet" href="styles.css">
@@ -19,16 +16,13 @@
   src="https://picsum.photos/1920/1080"
 >
 <div class="overlay | inset-0 z-100" data-overlay></div>
-<div class="showerthought-container">
-  <h1 class="showerthought-text">The quick brown fox jumps over the lazy dog</h1>
+<div class="container">
+  <div class="greetContainer" id="greet"></div>
+  <form method="get" action="https://www.google.com/search">
+    <input class="searchbox" type="text" name="q" size="31" value="" placeholder="Search..."/>
+    <button class="searchButton" type="submit">Go!</button>
+  </form>
 </div>
-<div class="favorites-container">
-  <div class="favorites-box"></div>
-  <div class="favorites-box"></div>
-  <div class="favorites-box"></div>
-  <div class="favorites-box"></div>
-  <div class="favorites-box"></div>
-  <div class="favorites-box"></div>
-</div>
+
 </body>
 </html>
